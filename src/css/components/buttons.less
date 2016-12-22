@@ -1,0 +1,24 @@
+.outline {
+  background-color: transparent;
+  border-color: transparent;
+  color: inherit;
+  transition: all .35s;
+  &.btn-default {
+    .outline-btn(@btn-default-color);
+  }
+  &.btn-primary {
+    .outline-btn(@btn-primary-bg);
+  }
+  &.btn-success {
+    .outline-btn(@btn-success-bg);
+  }
+  &.btn-warning {
+    .outline-btn(@btn-warning-bg);
+  }
+  &.btn-danger {
+    .outline-btn(@btn-danger-bg);
+  }
+}
+.btn {
+  outline: none !important;
+}

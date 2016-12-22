@@ -1,0 +1,10 @@
+.outline-btn (@color) {
+  color: @color;
+  background: transparent;
+  &:hover, &:focus, &:active {
+    color: @component-active-color;
+    border-radius: 0;
+    border-color: fade(@color, 10%);
+    background: fade(@color, 90%);
+  }
+}

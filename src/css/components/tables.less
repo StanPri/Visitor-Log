@@ -9,4 +9,30 @@
       padding: 5px;
     }
   }
+
+  > tbody > tr {
+    > td.outline-cell {
+      padding: 0;
+    }
+  }
+}
+
+.table-editable {
+  > .input-sm {
+    font-size: inherit;
+  }
+
+  > tbody > tr > td {
+    padding: 0;
+  }
+
+  .form-control {
+    border: 0;
+    padding: 0 5px;
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }

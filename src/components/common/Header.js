@@ -31,6 +31,11 @@ class Header extends React.Component {
         <div className="navbar-collapse collapse hidden" id="navbar">
           <ul className="nav navbar-nav navbar-right">
             <li onClick={toggleMenuOnClick}>
+              <Link to="/admin" activeClassName="active">
+                <Button className="btn-outline">Admin</Button>
+              </Link>
+            </li>
+            <li onClick={toggleMenuOnClick}>
               <IndexLink to="/" activeClassName="active">
                 <Button className="btn-outline">Main Page</Button>
               </IndexLink>
